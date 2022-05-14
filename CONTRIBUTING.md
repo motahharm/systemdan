@@ -29,7 +29,7 @@ $ pip install -r requirements.txt
 now you can run the program:
 
 ```bash
-$ python -m sysdan os # or you can run other commands
+$ python -m systemdan os # or you can run other commands
 ```
 
 <h1 align="center">

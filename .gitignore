@@ -1,2 +1,5 @@
-sysdan/__pycache__/
 tests/__pycache__/
+systemdan/__pycache__/
+systemdan/build/
+systemdan/dist/
+systemdan/__main__.spec

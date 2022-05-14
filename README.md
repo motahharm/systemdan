@@ -1,8 +1,8 @@
 <h1 align="center">
-SysDan
+SystemDan
 </h1>
 
-## sysdan is a collection of tools for system information.
+### systemdan is a collection of tools for system information.
 
 <h2 align="center">
 Commands
@@ -11,7 +11,7 @@ Commands
 for get information about the operating system; run this:
 
 ```bash
-$ sysdan os
+$ systemdan os
 # OS: Windows
 # release: 10
 # architecture: AMD64
@@ -20,9 +20,9 @@ $ sysdan os
 for get a list of all available commands, run this:
 
 ```bash
-$ sysdan --help
+$ systemdan --help
 # for get help about a specific command, run this:
-$ sysdan os --help
+$ systemdan os --help
 ```
 <h2 align="center">
 Contributing
