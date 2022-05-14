@@ -51,6 +51,18 @@ def info() -> None:
     typer.echo(f'CPU list: {cpu_info["cpu_list"]}')
     typer.echo(f'CPU percent: {cpu_info["cpu_percent"]}')
 
+    typer.echo(typer.style(f'\nMemory\n', fg=typer.colors.BLUE))
+    mem_info = system_info.get_memory_info()
+    typer.echo(f'Total memory: {mem_info["total"]}')
+    typer.echo(f'Available memory: {mem_info["available"]}')
+    typer.echo(f'Used memory: {mem_info["used"]}')
+
+    typer.echo(f'Swap Percentage: {mem_info["percentage"]}')
+    typer.echo(f'Swap total: {mem_info["swap_total"]}')
+    typer.echo(f'Swap free: {mem_info["swap_free"]}')
+    typer.echo(f'Swap used: {mem_info["swap_used"]}')
+    typer.echo(f'Swap percentage: {mem_info["swap_percentage"]}')
+
 
 @app.command(name='os')
 def os_info(vars: bool = False,

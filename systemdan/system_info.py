@@ -6,6 +6,18 @@ from datetime import datetime
 
 uname = platform.uname()
 
+def get_size(bytes, suffix="B"):
+    """
+    e.g:
+        1253656 => '1.20MB'
+        1253656678 => '1.17GB'
+    """
+    factor = 1024
+    for unit in ["", "K", "M", "G", "T", "P"]:
+        if bytes < factor:
+            return f"{bytes:.2f}{unit}{suffix}"
+        bytes /= factor
+
 def get_system_name() -> str:
     return uname.system
 def get_node_name() -> str:
@@ -58,5 +70,21 @@ def get_cpu_info() -> dict:
         ):
         result['cpu_list'].append(percentage)
     result['cpu_percent'] = psutil.cpu_percent()
+
+    return result
+
+def get_memory_info() -> dict:
+    """Get the memory information"""
+    result = {}
+    svmem = psutil.virtual_memory()
+    result['total'] = get_size(svmem.total)
+    result['available'] = get_size(svmem.available)
+    result['used'] = get_size(svmem.used)
+    result['percentage'] = get_size(svmem.free)
+    swap = psutil.swap_memory()
+    result['swap_total'] = get_size(swap.total)
+    result['swap_free'] = get_size(swap.free)
+    result['swap_used'] = get_size(swap.used)
+    result['swap_percentage'] = swap.percent
 
     return result

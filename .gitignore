@@ -3,3 +3,7 @@ systemdan/__pycache__/
 systemdan/build/
 systemdan/dist/
 systemdan/__main__.spec
+systemdan/command
+systemdan/commandlinux
+systemdan/distlinux/
+__main__.spex
