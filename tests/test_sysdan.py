@@ -1,3 +1,4 @@
+"""test the cli module"""
 # tests/test_sysdan.py
 
 from typer.testing import CliRunner
