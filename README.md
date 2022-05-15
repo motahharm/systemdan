@@ -25,6 +25,14 @@ $ systemdan --help
 # for get help about a specific command, run this:
 $ systemdan os --help
 ```
+
+<h2 align="center">
+Todo
+</h2>
+
+- [ ] Add a command for getting the current date and time.
+- [ ] Add graphical user interface.
+
 <h2 align="center">
 Contributing
 </h2>
