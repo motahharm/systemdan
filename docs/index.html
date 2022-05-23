@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/vazir-font/30.1.0/font-face.css"
+    />
+    <script src="https://unpkg.com/rolly.js/dist/rolly.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/rolly.js@0.4.0/css/style.css"
+    />
+    <style>
+      body {
+        font-family: "Vazir", sans-serif;
+      }
+      ::selection {
+        background: #202020;
+        color: #f3f3f3;
+      }
+    </style>
+
+    <title>SystemDan</title>
+  </head>
+  <body>
+    <div id="app">
+      <div
+        class="container-fluid text-center text-light p-3 text-center"
+        data-scene
+        style="background-color: #273036"
+      >
+        <div
+          class="col-12"
+          data-scene
+          data-speed=".5"
+          style="top: -200px; position: relative"
+        >
+          <div style="height: 100px"></div>
+          <h1 class="display-1 fw-bold my-3">SystemDan</h1>
+          <h3 class="fw-light fs-5">a python app for get system information</h3>
+          <a href="https://github.com/motahharm/systemdan" class="btn btn-light w-100 my-1"
+            >Github repository</a
+          >
+          <a href="#" class="btn btn-outline-light w-100 my-1 disabled">Docs (Comming Sonn)</a>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" data-scene viewBox="0 0 1440 320">
+        <path
+          fill="#273036"
+          fill-opacity="1"
+          d="M0,160L26.7,154.7C53.3,149,107,139,160,122.7C213.3,107,267,85,320,106.7C373.3,128,427,192,480,192C533.3,192,587,128,640,133.3C693.3,139,747,213,800,224C853.3,235,907,181,960,138.7C1013.3,96,1067,64,1120,53.3C1173.3,43,1227,53,1280,85.3C1333.3,117,1387,171,1413,197.3L1440,224L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
+        ></path>
+      </svg>
+
+      <div
+        class="row text-center text-dark m-3 p-3 rounded-3"
+        data-scene
+        data-speed=".7"
+        style="top: 200px; position: relative"
+        data-trigger="scroll"
+      >
+        <div class="col-12">
+          <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+          <h1 class="display-1 fw-bold my-3">Fetures</h1>
+          <h3 class="fw-light fs-5">
+            SystemDan is a open source project and you can use it for free.
+          </h3>
+          <div class="container px-4 py-5" id="featured-3">
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 text-start">
+              <div class="feature col">
+                <h2>Writen in Python</h2>
+                <p>
+                  SystemDan source code is written in python and you can use it
+                  or modify it.
+                </p>
+              </div>
+              <div class="feature col">
+                <h2>Open Source</h2>
+                <p>
+                  SystemDan is open source app so you can use it for free and
+                  contribute to it.
+                </p>
+              </div>
+              <div class="feature col">
+                <h2>Available for Linux and Windows</h2>
+                <p>SystemDan is available for Linux and Windows.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="height: 1000px"></div>
+
+      <div
+        class="row text-center text-dark m-3 p-3 rounded-3 overflow-hidden"
+        data-scene
+        data-speed="1.5"
+        style="bottom: 40vh; position: relative"
+        data-trigger="scroll"
+      >
+        <div class="col-12 overflow-hidden">
+          <h1 class="display-1 fw-bold my-3">Join SystemDan contribtion</h1>
+          <h3 class="fw-light fs-5">
+            if you want to contribute to SystemDan you can open an pull request
+            and we will check it soon.
+          </h3>
+          <a href="https://github.com/motahharm/systemdan" class="btn btn-dark w-100 my-1"
+            >Github repository</a
+          >
+        </div>
+      </div>
+
+      <script>
+        const config = {
+          view: document.querySelector("#app"),
+          native: true,
+          vertical: true,
+        };
+
+        const r = window.rolly(config);
+        r.init();
+      </script>
+
+    </div>
+  </body>
+</html>
