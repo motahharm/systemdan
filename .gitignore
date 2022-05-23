@@ -2,8 +2,10 @@ tests/__pycache__/
 systemdan/__pycache__/
 systemdan/build/
 systemdan/dist/
-systemdan/__main__.spec
+systemdan/distlinux/
+.vscode/
+
+__main__.spex
 systemdan/command
 systemdan/commandlinux
-systemdan/distlinux/
-__main__.spex
+systemdan/__main__.spec
